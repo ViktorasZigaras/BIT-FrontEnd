@@ -1,0 +1,32 @@
+.rows {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-view {
+    /*align: center;*/
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    background-color: #EAEBED;
+}
+
+.wrap {
+    word-wrap: break-word;
+}
+
+.right {
+    width: 150px;
+    padding: 10px;
+    vertical-align: baseline;
+}
+
+/*
+display: inline-block (all)
+width 50-50
+float left + right
+margin l r t b
+*/
