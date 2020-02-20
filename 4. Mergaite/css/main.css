@@ -1,0 +1,137 @@
+.container {
+    width: 800px;
+    display: inline-block;
+    background-color: burlywood;
+    margin-top: 50px;
+    margin-left: calc((100% - 800px) / 2);
+}
+
+    .header {
+        display: inline-block;
+        width: 100%;
+    }
+
+        .logo-img {
+            display: inline-block;
+            float: left;
+            height: 75px;
+        }
+
+        .navigation {
+            display: inline-block;
+            float: right;
+            margin-top: 20px;
+        }
+
+            .link-simple {
+                display: inline-block;
+                float: left;
+                margin-left: 10px;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .link-login {
+
+            }
+
+    .main {
+
+    }
+
+        .info {
+            display: inline-block;
+            float: left;
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 50px;
+        }
+
+            .line-1 {
+
+            }
+
+            .line-2 {
+                
+            }
+
+        .picture {
+            display: inline-block;
+            float: right;
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*line-height atributas*/
+
+
+
+
+/*body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.columns {
+    display: flex;
+}
+
+.main-view {
+    width: 50%;
+    height: 500px;
+    margin-top: calc((100vh - 500px) / 2);
+    margin-left: calc((100vw - 50%) / 2);
+    background-color: #EAEBED;
+    text-align: center;
+}
+
+.right {
+    width: 250px;
+    padding: 10px;
+    vertical-align: baseline;
+}
+
+    .right * {
+        margin: 5px;
+    }
+
+    .wrap {
+        word-wrap: break-word;
+        font-size: 20px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .link {
+        text-decoration: none;
+        background-color: blue;
+        border-radius: 5px;
+    }*/
+
+/*
+display: inline-block (all)
+width 50-50
+float left + right
+margin l r t b
+text-transform
+*/
