@@ -1,0 +1,94 @@
+
+div, p, h1, a, img {
+    display: inline-block;
+}
+
+.header {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container {
+    width: 800px;
+    background-color: burlywood;
+    margin-top: 50px;
+    margin-left: calc((100% - 800px) / 2);
+}
+    .header {
+        width: 100%;
+    }
+        .logo-img {
+            float: left;
+            height: 75px;
+        }
+        .navigation {
+            float: right;
+            margin-top: 20px;
+        }
+            .link-simple {
+                float: left;
+                margin-left: 10px;
+                font-size: 20px;
+                line-height: 20px;
+                padding: 10px;
+            }
+            .link-login {
+                text-decoration: none;
+                background-color: beige;
+                border-radius: 20px;
+                padding: 10px;
+            }
+    .main {
+
+    }
+        .info {
+            float: left;
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 50px;
+            text-align: center;
+        }
+            .line-1 {
+                width: 100%;
+                font-size: 24px;
+                line-height: 24px;
+            }
+            .line-2 {
+                display: block;
+                width: 100%;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        .picture {
+            float: right;
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }*/
+
+
+
+
+
+
+
+
+
+/*
+display: inline-block (all)
+width 50-50
+float left + right
+margin l r t b
+text-transform
+*/
