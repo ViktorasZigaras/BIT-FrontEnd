@@ -1,75 +1,65 @@
+
+div, p, h1, a, img {
+    display: inline-block;
+}
 .container {
     width: 800px;
-    display: inline-block;
     background-color: burlywood;
     margin-top: 50px;
     margin-left: calc((100% - 800px) / 2);
 }
-
     .header {
-        display: inline-block;
         width: 100%;
     }
-
         .logo-img {
-            display: inline-block;
             float: left;
             height: 75px;
         }
-
         .navigation {
-            display: inline-block;
             float: right;
             margin-top: 20px;
         }
-
             .link-simple {
-                display: inline-block;
                 float: left;
                 margin-left: 10px;
                 font-size: 20px;
                 line-height: 20px;
+                padding: 10px;
             }
-
             .link-login {
-
+                text-decoration: none;
+                background-color: beige;
+                border-radius: 20px;
+                padding: 10px;
             }
-
     .main {
 
     }
-
         .info {
-            display: inline-block;
             float: left;
             width: 46%;
             margin-left: 2%;
             margin-right: 2%;
             margin-top: 50px;
+            text-align: center;
         }
-
             .line-1 {
-
+                width: 100%;
+                font-size: 24px;
+                line-height: 24px;
             }
-
             .line-2 {
-                
+                display: block;
+                width: 100%;
+                font-size: 12px;
+                line-height: 12px;
             }
-
         .picture {
-            display: inline-block;
             float: right;
             width: 46%;
             margin-left: 2%;
             margin-right: 2%;
         }
-
-
-
-
-
-
-
 
 
 
