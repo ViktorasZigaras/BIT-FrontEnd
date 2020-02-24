@@ -66,21 +66,30 @@ div, p, h1, a, img {
                 line-height: 30px;
             }
 
-            footer * {
-                display: inline-block;
+            footer {
+                
                 /* width: 100%; */
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            footer > * {
+                /* display: inline-block; */
+                float: left;
             }
 
                 .policy {
-                    
+                    /* float: left; */
                 }
 
                 footer > spam {
-
+                    /* float: left; */
                 }
 
                 .terms {
-
+                    /* float: left; */
                 }
 
         .right {
@@ -95,12 +104,30 @@ div, p, h1, a, img {
                 width: 60%;
                 height: 600px;
                 background-color: white;
-                padding: 20px;
+                padding: 50px;
                 right: 0;
+
+                /* position: relative; */
             }
 
             .close-icon {
+                /* display: inline-block; */
+                width: 50px;
+                height: 50px;
+                background-color: antiquewhite;
+                text-align: center;
+                line-height: 45px;
+                cursor: pointer;
+                /* z-index: 1000; */
 
+                position: absolute;
+                top: 0;
+                right: 0;
+
+
+                /* float: right;
+                margin-top: -20px;
+                margin-right: -20px; */
             }
 
             .input-form {
@@ -139,7 +166,7 @@ div, p, h1, a, img {
                     }
 
                     .button {
-                        display: inline-block;
+                        /* display: inline-block; */
                         float: left;
                         background-color: indigo;
                         padding: 10px;
@@ -153,7 +180,7 @@ div, p, h1, a, img {
                     }
 
                     .form-row > spam {
-                        display: inline-block;
+                        /* display: inline-block; */
                         float: left;
                         font-size: 16px;
                         line-height: 20px;
@@ -161,7 +188,7 @@ div, p, h1, a, img {
                     }
 
                     .link-login {
-                        display: inline-block;
+                        /* display: inline-block; */
                         float: left;
                         font-size: 16px;
                         line-height: 20px;
