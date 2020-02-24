@@ -1,282 +1,160 @@
-
-div, p, h1, a, img {
-    /*display: inline-block;*/
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-* {
-    /* box-sizing: border-box; */
+.container > .left, 
+.container > .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.container > .left > footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background, 
+.container > .left {
+    background-image: url('../images/logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left > * {
+    float: left;
+}
+
+.background,
+.container > .left,
+.container > .right > form > *,
+.container > .right > form > .form-row > .label,
+.container > .right > form > .form-row > .form-input
+{
+    display: inline-block;
+}
+
+/**/
 
 .background {
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat; 
-    background-size: 100% 100%;
     filter: blur(16px);
     width: 100%;
     height: 100vh;
 }
 
-/* .container {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 100;
-} */
-
-    .container-centering {
-        /* width: 100%; */
-        /* height: 100vh; */
-        /* z-index: 100; */
-        width: 80%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        /* z-index: 100; */
-    }
-
-        .left {
-            /* position: relative; */
-        }
-
-            .left-centering {
-                display: inline-block;
-                position: absolute;
-                top: 50%;
-                /* right: 0; */
-                transform: translateY(-50%);
-                width: 40%;
-                /* width: 300px; */
-                height: 500px;
-                background-image: url('../images/logo.png');
-                background-repeat: no-repeat; 
-                /* background-attachment: fixed; */
-                background-size: cover;
-                padding: 10px;
-
-                color: #fff;
-            }
-
-            .sign-up {
-                text-transform: capitalize;
-                
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            footer {
-                
-                /* width: 100%; */
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            footer > * {
-                /* display: inline-block; */
-                float: left;
-            }
-
-                .policy {
-                    /* float: left; */
-                }
-
-                footer > spam {
-                    /* float: left; */
-                }
-
-                .terms {
-                    /* float: left; */
-                }
-
-        .right {
-            /* position: relative; */
-        }
-
-            .right-centering {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                /* width: 400px; */
-                width: 60%;
-                height: 600px;
-                background-color: white;
-                padding: 50px;
-                right: 0;
-
-                /* position: relative; */
-            }
-
-            .close-icon {
-                /* display: inline-block; */
-                width: 50px;
-                height: 50px;
-                background-color: antiquewhite;
-                text-align: center;
-                line-height: 45px;
-                cursor: pointer;
-                /* z-index: 1000; */
-
-                position: absolute;
-                top: 0;
-                right: 0;
-
-
-                /* float: right;
-                margin-top: -20px;
-                margin-right: -20px; */
-            }
-
-            .input-form {
-                display: inline-block;
-                width: 100%;
-            }
-
-                .form-row {
-                    display: inline-block;
-                    width: 100%;
-                    margin-bottom: 15px;
-                }
-
-                .form-row:last-of-type {
-                    margin-bottom: 0px;
-                }
-
-                    .label {
-                        display: inline-block;
-                        width: 100%;
-                        text-transform: capitalize;
-                        color: grey;
-                        font-size: 14px;
-                        line-height: 15px;
-                        margin-bottom: 5px;
-                    }
-
-                    .form-input {
-                        display: inline-block;
-                        width: 100%;
-                        border: none;
-                        color: #333;
-                        font-size: 18px;
-                        line-height: 25px;
-                        border-bottom: 1px solid black;
-                    }
-
-                    .button {
-                        /* display: inline-block; */
-                        float: left;
-                        background-color: indigo;
-                        padding: 10px;
-                        padding-right: 30px;
-                        padding-left: 30px;
-                        border-radius: 20px;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #fff;
-                        cursor: pointer;
-                    }
-
-                    .form-row > spam {
-                        /* display: inline-block; */
-                        float: left;
-                        font-size: 16px;
-                        line-height: 20px;
-                        padding: 10px;
-                    }
-
-                    .link-login {
-                        /* display: inline-block; */
-                        float: left;
-                        font-size: 16px;
-                        line-height: 20px;
-                        padding: 10px;
-                    }
-
-
-
-
-
-
-
-
-
-
-
-
-/*.container {
-    width: 800px;
-    background-color: burlywood;
-    margin-top: 50px;
-    margin-left: calc((100% - 800px) / 2);
+.container {
+    width: 80%;
 }
-    .header {
-        width: 100%;
-    }
-        .logo-img {
-            float: left;
-            height: 75px;
-        }
-        .navigation {
-            float: right;
-            margin-top: 20px;
-        }
-            .link-simple {
-                float: left;
-                margin-left: 10px;
-                font-size: 20px;
-                line-height: 20px;
-                padding: 10px;
-            }
-            .link-login {
-                text-decoration: none;
-                background-color: beige;
-                border-radius: 20px;
-                padding: 10px;
-            }
-    .main {
 
-    }
-        .info {
-            float: left;
-            width: 46%;
-            margin-left: 2%;
-            margin-right: 2%;
-            margin-top: 50px;
-            text-align: center;
-        }
-            .line-1 {
-                width: 100%;
-                font-size: 24px;
-                line-height: 24px;
-            }
-            .line-2 {
-                display: block;
-                width: 100%;
-                font-size: 12px;
-                line-height: 12px;
-            }
-        .picture {
-            float: right;
-            width: 46%;
-            margin-left: 2%;
-            margin-right: 2%;
-        }*/
+.container > .left {
+    width: 40%;
+    /**/
+    height: 500px;
+    background-color: blue;
+    padding: 10px;
+    color: #fff;
+}
 
+.container > .left > .sign-up {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
 
+.container > .left > footer {
+    bottom: 20px;
+}
+.container > .left > footer > * {
+    float: left;
+}
 
+.container > .left > footer > .policy {}
+.container > .left > footer > spam {}
+.container > .left > footer > .terms {}
 
+.container > .right {
+    width: 60%;
+    /**/
+    height: 600px;
+    background-color: white;
+    padding: 50px;
+    right: 0;
+}
 
+.container > .right > .close-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container > .right > .close-icon::before,
+.container > .right > .close-icon::after {
+    width: 20px;
+    height: 2px;
+    background-color: burlywood;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.container > .right > .close-icon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
 
+.container > .right > form > *,
+.container > .right > form > .form-row > .label,
+.container > .right > form > .form-row > .form-input {
+    width: 100%;
+}
 
+.container > .right > form > .form-row {
+    margin-bottom: 15px;
+}
+.container > .right > form > .form-row:last-of-type {
+    margin-bottom: 0px;
+}
+.container > .right > form > .form-row > * {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
 
+.container > .right > form > .form-row > .label {
+    font-size: 14px;
+    line-height: 15px;
+}
+.container > .right > form > .form-row > .form-input {
+    font-size: 18px;
+    line-height: 25px;
+}
 
-/*
-display: inline-block (all)
-width 50-50
-float left + right
-margin l r t b
-text-transform
-*/
+.container > .right > form > .form-row > .label {
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.container > .right > form > .form-row > .form-input {
+    color: #333;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.container > .right > form > .form-row > .button {
+    background-color: indigo;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container > .right > form > .form-row > spam {}
+.container > .right > form > .form-row > .link-login {}
