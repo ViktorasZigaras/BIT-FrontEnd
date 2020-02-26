@@ -38,6 +38,11 @@
     display: inline-block;
 }
 
+/* body > *
+{
+    display: inline-block;
+} */
+
 /**/
 
 .background {
